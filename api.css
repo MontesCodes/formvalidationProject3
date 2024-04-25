@@ -30,4 +30,12 @@ label {
   font-size: 1.2rem;
   flex-basis: 30%;
   padding: 0.25rem 1px;
+  text-align: start;
+  color: inherit;
+  text-shadow: inherit;
+}
+input {
+  font-size: 1.2rem;
+  flex-basis: 100%;
+  width: calc(100% - 2px);
 }
