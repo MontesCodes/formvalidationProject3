@@ -42,12 +42,16 @@
             enterkeyhint="send"
             autocomplete="off"
           />
-          <span class="instructions"><span class="errMessage"></span></span>
-          <span class="upper">At least One uppercase letter</span>
-          <span class="lower">At least One lowercase letter</span>
-          <span class="num">At least One number</span>
-          <span class="len">At least 10 characters long</span>
-          <span class="invalid">Only allowed special characters are ! @ #</span>
+          <span class="instructions"><span class="errMessage"></span></span
+          ><br />
+          <span class="upper">At least One uppercase letter</span><br />
+          <span class="lower">At least One lowercase letter</span><br />
+          <span class="num">At least One number</span><br />
+          <span class="len">At least 10 characters long</span><br />
+          <span class="invalid"
+            >Only allowed special characters are ! @ # $ ^ & * () > . , ? : ;
+            ~</span
+          >
         </p>
         <p>
           <label for="cell">Cellphone</label>
@@ -73,6 +77,10 @@
             <option value="fr" lang="fr">Francais</option>
           </select>
           <span class="instructions"><span class="errMessage"></span></span>
+        </p>
+        <p>
+          <label for="pets">Number of Pets</label>
+          <input type="number" inputmode="numeric" id="pets" name="pets" />
         </p>
       </form>
     </main>
