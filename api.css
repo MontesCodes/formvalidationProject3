@@ -3,4 +3,31 @@ form > p {
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: #eee;
+}
+
+form p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: hsla(200, 10%, 50%, 0.64);
+  transform: translateX(-110%);
+  transition: transform 0.2s ease-out;
+}
+form p:focus-within::before {
+  transform: translateX(0);
+}
+label {
+  font-size: 1.2rem;
+  flex-basis: 30%;
+  padding: 0.25rem 1px;
 }
