@@ -5,5 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <form name="sampleForm" action="#" method="post" autocomplete="off">
+        <p>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            inputmode="text"
+            id="fullname"
+            enterkeyhint="next"
+            autocomplete="off"
+            placeholder="Enter your full name"
+          />
+          <span class="instructions"><span class="errMessage"></span></span>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            inputmode="email"
+            id="email"
+            name="email"
+            enterkeyhint="next"
+            autocomplete="off"
+            placeholder="Enter your email address"
+          />
+          <span class="instructions"><span class="errMessage"></span></span>
+        </p>
+        <p>
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            enterkeyhint="send"
+            autocomplete="off"
+          />
+          <span class="instructions"><span class="errMessage"></span></span>
+          <span class="upper">At least One uppercase letter</span>
+          <span class="lower">At least One lowercase letter</span>
+          <span class="num">At least One number</span>
+          <span class="len">At least 10 characters long</span>
+          <span class="invalid">Only allowed special characters are ! @ #</span>
+        </p>
+        <p>
+          <label for="cell">Cellphone</label>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="cell"
+            name="cell"
+            enterkeyhint="next"
+            autocomplete="off"
+          />
+          <span class="instructions"><span class="errMessage"></span></span>
+        </p>
+        <p>
+          <label for="lang">Language</label>
+          <select id="lang" autocomplete="off">
+            <option value="">Choose a Language</option>
+            <option value="en" lang="en">English</option>
+            <option value="sv" lang="sv">Svensk</option>
+            <option value="ru" lang="ru">pyccknn</option>
+            <option value="de" lang="de">Deutsch</option>
+            <option value="es" lang="es">Espanol</option>
+            <option value="fr" lang="fr">Francais</option>
+          </select>
+          <span class="instructions"><span class="errMessage"></span></span>
+        </p>
+      </form>
+    </main>
+  </body>
 </html>
