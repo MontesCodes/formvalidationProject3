@@ -38,4 +38,60 @@ input {
   font-size: 1.2rem;
   flex-basis: 100%;
   width: calc(100% - 2px);
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+select,
+option {
+  font-size: 1.2rem;
+  flex-basis: 100%;
+  width: calc(100% - 2px);
+  padding: 0.25rem 1rem;
+}
+button {
+  border: none;
+  background-color: cornflowerblue;
+  color: #fff;
+  flex-basis: 100%;
+  width: calc(100% - 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #ccc;
+}
+.instructions span {
+  padding-left: 2rem;
+}
+input:focus,
+select:focus,
+textarea:focus {
+}
+input:read-only {
+}
+input:read-write {
+}
+input:disabled {
+}
+input:required,
+select:required,
+option:required {
+}
+input:optional {
+}
+:placeholder-shown {
+}
+::placeholder {
+}
+input:valid {
+}
+input:invalid {
+}
+:in-range {
+}
+:out-of-range {
 }
